@@ -93,7 +93,7 @@
     }
 
     .container-carrito-detalle {
-        /* border: 1px solid red; */
+        border: 1px solid red;
         /* flex-wrap: wrap; */
         padding: 30px;
         justify-content: center;
