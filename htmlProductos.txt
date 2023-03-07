@@ -1,0 +1,170 @@
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza" class="imagen-productos">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="productos">
+                    <img src="./image/latas/quilmes-negra.png" alt="cerveza">
+                    <div class="descripcion-productos">
+                        <div class="nombre-productos">
+                            <!-- Nombre - Precio -->
+                            <h4>Quilmes Negra</h4>
+                            <p>Precio</p>
+                        </div>
+                        <!-- Precio -->
+                        <!-- <div class="precio-productos">
+
+                        </div> -->
+                        <!-- Funcion -->
+                        <p class="valor">$500</p>
+                        <button class="btn-comprar-productos">Comprar</button>
+                    </div>
+
+                </div>

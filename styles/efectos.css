@@ -1,0 +1,27 @@
+/* Bloquear boton ver mas cuando se terminan los productos en el arreglo */
+
+
+.hidden {
+    display: none;
+}
+
+/* Mensaje emergente - cuando generamos un cambio */
+
+.mensaje-emergente {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.5s ease-out;
+    transform: translateY(200%);
+}
+
+.mensaje-efecto {
+    transform: translateY(0);
+    transition: all 0.5s ease-in;
+}

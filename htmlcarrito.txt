@@ -1,0 +1,17 @@
+  <!-- <div class="container-carrito">
+                    <div class="container-carrito-detalle">
+                        <img src="./image/latas/amstel.png" alt="cerveza" class="img-cerveza">
+                        <div class="container-detalle-item">
+                            <h4 class="item-cerveza">Cerveza quilmes</h4>
+                            <h4 class="item-tipo">Categoria</h4>
+                            <h4 class="item-precio">Precio</h4>
+                            <h4 class="item-precio-detalle">$ 200</h4>
+                        </div>
+                        <div class="container-cantidad">
+                            <button class="signo-cantidad mas">+</button>
+                            <span class="precio">1</span>
+                            <button class="signo-cantidad menos">-</button>
+                            <i class="fa fa-trash vaciar" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
