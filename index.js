@@ -17,8 +17,16 @@ const menuFiltrar = document.querySelector(".categorias");
 const listaCategoria = document.querySelectorAll(".category");
 const menuNavBar = document.querySelector(".navbar-list");
 const btnComprarCarrito = document.querySelector(".btn-comprar");
+const btnVaciarCarrito = document.querySelector(".btn-vaciar");
 const btnVaciar = document.querySelector(".vaciar");
 const mensajeEmergente = document.querySelector(".mensaje-emergente");
+
+// Validacion
+const formulario = document.querySelector("#form");
+const usuario = document.querySelector("#user");
+const telefono = document.querySelector("#telefono");
+const email = document.querySelector("#email");
+const mensaje = document.querySelector("#input-msj");
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -206,7 +214,7 @@ const renderCarritoProducto = (productosCarrito) => {
                             <button class="signo-cantidad menos" data-id=${id}>-</button>
                             <span class="cantidad">${cantidad}</span>
                             <button class="signo-cantidad mas" data-id=${id} >+</button>
-                            <i class="fa fa-trash vaciar" aria-hidden="true"></i>
+                            
                         </div>
                     </div>
                 </div>
@@ -239,6 +247,14 @@ const BloquearBoton = (btn) => {
     btn.classList.add("disabled");
   } else {
     btn.classList.remove("disabled");
+  }
+};
+
+const BloquearBotonVaciar = (btnv) => {
+  if (!carrito.length) {
+    btnv.classList.add("disabled");
+  } else {
+    btnv.classList.remove("disabled");
   }
 };
 
@@ -352,12 +368,82 @@ const completarCompra = () => {
   completarAccion("Desea Completar su Compra?", "Gracias Por su Compra !! ");
 };
 
+const vaciarCarrito = () => {
+  completarAccion(
+    "¿Desea vaciar el carrito?",
+    "No hay productos en el carrito"
+  );
+};
+
 const vaciarCarro = () => {
   completarAccion(
     "Desea Vaciar el Carrito?",
     "No hay Productos en el carrito !! "
   );
 };
+
+// ! validaciones
+
+// Funcion para checkear si esta vacio
+const isEmpty = (value) => !value.length;
+
+// Funcion para validar email regex
+const isEmailValid = (email) => {
+  const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+  return re.test(email);
+};
+
+// Checkeamos si el telefono es valido (10 numeros) Va a aceptar celulares
+const isPhoneValid = (telefono) => {
+  const re = /^[0-9]{10}$/;
+  // Testeamos
+  return re.test(telefono);
+};
+
+const checkEmail = () => {
+  let valid = false;
+  const emailValue = email.value.trim();
+  // Checkeamos si el campo esta vacio
+  if (isEmpty(emailValue)) {
+    alert("Hay campos que estan vacios");
+  } else if (!isEmailValid(emailValue)) {
+    alert("El email es invalido");
+  } else {
+    valid = true;
+  }
+
+  return valid;
+};
+
+// Checkeamos el telefono
+const checkPhone = () => {
+  let valid = false;
+  const telefonoValido = telefono.value.trim();
+  // Checkeamos si el campo esta vacio
+  if (isEmpty(telefonoValido)) {
+    alert("Hay campos que estan vacios");
+  } else if (!isPhoneValid(telefonoValido)) {
+    alert("El telefono ingresado es invalido faltan digitos");
+  } else {
+    valid = true;
+  }
+
+  return valid;
+};
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let isEmailValid = checkEmail();
+  let isPhoneValid = checkPhone();
+
+  let isFormValid = isEmailValid && isPhoneValid;
+
+  if (isFormValid) {
+    formulario.reset();
+    alert("Se envio el formulario correctamente");
+  }
+});
 
 // Funcion donde vamos a ejecutar todo
 
@@ -377,7 +463,9 @@ const init = () => {
   productos.addEventListener("click", agregarProducto);
   productosCarrito.addEventListener("click", operarCantidad);
   btnComprarCarrito.addEventListener("click", completarCompra);
+  btnVaciarCarrito.addEventListener("click", vaciarCarrito);
   BloquearBoton(btnComprarCarrito);
+  BloquearBoton(btnVaciarCarrito);
 };
 
 init();

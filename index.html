@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/logo-beer.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/logo-beer.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Beer Shop</title>
@@ -66,6 +67,7 @@
                     <p class="total">$ 0.00</p>
                 </div>
                 <button class="btn-comprar">Comprar</button>
+                <button class="btn-vaciar">Vaciar</button>
 
 
 
@@ -282,16 +284,16 @@
                 <h2 class="section-title-contact">Contactos</h2>
             </div>
             <div class="contact-container">
-                <form class="formulario">
+                <form class="formulario" id="form">
                     <!-- // NOMBRE TELEFONO EMAIL MENSAJE -->
                     <label for="user">Nombre</label>
                     <input type="text" placeholder="Ingresa tu Nombre" id="user" />
                     <label for="Telefono">Telefono</label>
-                    <input type="number" placeholder="Ingresa tu Numero de Telefono" id="Telefono" />
+                    <input type="number" placeholder="Ingresa tu Numero de Telefono" id="telefono" />
                     <label for="email">Email</label>
                     <input type="email" placeholder="Ingresa tu Correo Electronico" id="email" />
                     <label for="mensaje">Mensaje</label>
-                    <input type="text" placeholder="Mensaje" id="mensaje" class="input-msj" />
+                    <input type="text" placeholder="Mensaje" id="mensaje" href="#" class="input-msj" />
                     <input type="submit" value="Enviar" class="btn" />
                 </form>
             </div>
